@@ -1,0 +1,755 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F3F6"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout style="@style/wrap_layout" >
+
+            <!-- 上圆角 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/tempNum"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/envisystemperaturesensorText"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/edit_bg"
+                    android:editable="false"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesmid_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/enviroTemp"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/envisystemperatureText"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/edit_bg"
+                    android:editable="false"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesmid_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/humiNum"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/envisyshumiditysensorText"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/edit_bg"
+                    android:editable="false"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesmid_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/humidity"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/envisyshumidityText"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/edit_bg"
+                    android:editable="false"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesbottom_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingBottom="16dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <Button
+                    android:id="@+id/getenvisysmoni"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.35"
+                    android:background="@layout/button_press"
+                    android:text="@string/ac_getAI"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/wrap_layout" >
+
+            <!-- 上圆角 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/tmpAlarm"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/envialarmtemperatureText"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/edit_bg"
+                    android:editable="false"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesmid_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/humAlarm"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/envialarmhumidityText"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/edit_bg"
+                    android:editable="false"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesmid_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/smkAlarm"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/envialarmsmokeText"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/edit_bg"
+                    android:editable="false"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesmid_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/wtrAlarm"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/envialarmimmersionText"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/edit_bg"
+                    android:editable="false"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesmid_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/rdAlarm"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/envialarmInfraredText"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/edit_bg"
+                    android:editable="false"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesmid_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/dorAlarm"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/envialarmdoorText"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/edit_bg"
+                    android:editable="false"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesmid_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/glzAlarm"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/envialarmglassText"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/edit_bg"
+                    android:editable="false"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesmid_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/sensorNum"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/envialarmsensornumberText"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/edit_bg"
+                    android:editable="false"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesmid_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/sensor"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/envialarmsensorText"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/edit_bg"
+                    android:editable="false"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesbottom_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingBottom="16dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <Button
+                    android:id="@+id/getenvialarm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.23"
+                    android:background="@layout/button_press"
+                    android:text="@string/getEnviro"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/wrap_layout" >
+
+            <!-- 上圆角 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/control"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/envicontrol"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/edit_bg"
+                    android:editable="false"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesmid_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <RadioGroup
+                    android:id="@+id/enviselect"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/enviopen"
+                        android:text="@string/dooropen" />
+
+                    <RadioButton
+                        android:id="@+id/enviclose"
+                        android:text="@string/doorclose" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesbottom_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingBottom="16dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <Button
+                    android:id="@+id/envisend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.33"
+                    android:background="@layout/button_press"
+                    android:text="@string/sentcontrol"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/wrap_layout" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/tempNum"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/enviconfigtemperaturenumberText"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/edit_bg"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesmid_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/tmpNumUp"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/enviconfigtemperatureupperlimitText"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/edit_bg"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesmid_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/tmpNumDown"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/enviconfigtemperaturelowerlimitText"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/edit_bg"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesmid_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/humiNum"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/enviconfighumiditynumberText"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/edit_bg"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/switchp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesmid_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/humNumUp"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/enviconfighumidityupperlimitText"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/edit_bg"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesmid_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/humNumDown"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/enviconfighumiditylowerlimitText"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/edit_bg" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesbottom_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingBottom="16dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <Button
+                    android:id="@+id/getenviconfig"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/ac_getAO"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+                <Button
+                    android:id="@+id/setenviconfig"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/setParam"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/wrap_layout" >
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

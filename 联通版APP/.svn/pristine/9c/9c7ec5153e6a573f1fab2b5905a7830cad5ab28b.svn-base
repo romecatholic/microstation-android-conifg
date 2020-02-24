@@ -1,0 +1,1119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F3F6"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout style="@style/wrap_layout" >
+
+            <!-- 上圆角 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rec_inputV"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/rdsysoutputVText"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/edit_bg"
+                    android:editable="false"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesmid_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="43dp"
+                    android:text="@string/rec_modelNum"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/rdsysmodenumberText"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/edit_bg"
+                    android:editable="false"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesmid_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:id="@+id/txt_rdsysoutputA1Text"
+                    android:layout_width="130dp"
+                    android:layout_height="43dp"
+                    android:text="@string/dc_mk1scdl"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/rdsysoutputA1Text"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/longedit"
+                    android:editable="false"
+                    android:paddingLeft="10dp" 
+                    android:hint="@string/rec_longPressHint"
+                    />
+            </LinearLayout>
+			<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesmid_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:id="@+id/txt_rdMktmpText"
+                    android:layout_width="130dp"
+                    android:layout_height="43dp"
+                    android:text="@string/dc_mk1wd"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/rdsysMKTmp1Text"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/edit_bg"
+                    android:editable="false"
+                    android:paddingLeft="10dp" />
+                    />
+            </LinearLayout>            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesbottom_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingBottom="16dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <Button
+                    android:id="@+id/getrdsysmoni"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.36"
+                    android:background="@layout/button_press"
+                    android:text="@string/ac_getAI"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/wrap_layout" >
+
+            <!-- 上圆角 -->
+
+            <!-- <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="整流模块数量:"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/rdswitchmodeText"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/edit_bg"
+                    android:editable="false"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesmid_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:id="@+id/txt_rdswitchstatusText"
+                    android:layout_width="130dp"
+                    android:layout_height="43dp"
+                    android:text="@string/rdf_mk1kgj"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/rdswitchstatusText"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/longedit"
+                    android:editable="false"
+                    android:paddingLeft="10dp" 
+                    android:hint="@string/rec_longPressHint"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesmid_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:id="@+id/txt_rdswitchcurrentlimitText"
+                    android:layout_width="130dp"
+                    android:layout_height="43dp"
+                    android:text="@string/rdf_mk1xl"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/rdswitchcurrentlimitText"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/edit_bg"
+                    android:editable="false"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesmid_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:id="@+id/txt_rdswitchchargeText"
+                    android:layout_width="130dp"
+                    android:layout_height="43dp"
+                    android:text="@string/rdf_mk1cd"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/rdswitchchargeText"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/edit_bg"
+                    android:editable="false"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesbottom_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingBottom="16dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <Button
+                    android:id="@+id/getrdsysswitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.33"
+                    android:background="@layout/button_press"
+                    android:text="@string/getSysOnOffState"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/wrap_layout" >
+
+            <!-- <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="整流模块数量:"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/rdalarmmodenumberText"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/edit_bg"
+                    android:editable="false"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesmid_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:id="@+id/txt_rdalarmmodeerrorText"
+                    android:layout_width="130dp"
+                    android:layout_height="43dp"
+                    android:text="@string/rdf_mk1mkgz"
+                    android:textColor="@color/text_clo"
+                    android:paddingBottom="3dp"                    
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/rdalarmmodeerrorText"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/longedit"
+                    android:editable="false"
+                    android:paddingLeft="10dp" 
+                    android:hint="@string/rec_longPressHint"
+                    />
+            </LinearLayout>
+
+            <!-- <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesmid_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:id="@+id/txt_rdalarmfanerrorText"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rdf_mk1fsgz"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/rdalarmfanerrorText"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/edit_bg"
+                    android:editable="false"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>-->
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesmid_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:id="@+id/txt_rdalarmacOverText"
+                    android:layout_width="130dp"
+                    android:layout_height="43dp"
+                    android:text="@string/rdf_mk1acgygz"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/rdalarmacOverText"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/edit_bg"
+                    android:editable="false"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesmid_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:id="@+id/txt_rdalarmdcOverText"
+                    android:layout_width="130dp"
+                    android:layout_height="43dp"
+                    android:text="@string/rdf_mk1dcgygz"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/rdalarmdcOverText"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/edit_bg"
+                    android:editable="false"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesmid_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:id="@+id/txt_rdalarmmodeovertemperatureText"
+                    android:layout_width="130dp"
+                    android:layout_height="43dp"
+                    android:text="@string/rdf_mk1zlq"
+                    android:textColor="@color/text_clo"
+                    android:paddingBottom="3dp"                    
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/rdalarmmodeovertemperatureText"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/edit_bg"
+                    android:editable="false"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesmid_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:id="@+id/txt_rdalarmcommunicationerrorText"
+                    android:layout_width="130dp"
+                    android:layout_height="43dp"
+                    android:text="@string/rdf_mk1tx"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/rdalarmcommunicationerrorText"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/edit_bg"
+                    android:editable="false"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesbottom_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingBottom="16dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <Button
+                    android:id="@+id/getrdalarm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.24"
+                    android:background="@layout/button_press"
+                    android:text="@string/ac_alarmstate"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+        
+          <LinearLayout style="@style/wrap_layout" android:id="@+id/rdf">
+
+            <!-- 上圆角 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:text="@string/rdf_jfc"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                 <RadioGroup
+                     android:id="@+id/fuorjunselect"
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+	                 android:layout_weight="1"
+	                 android:gravity="center_horizontal"
+                     android:orientation="horizontal" >
+
+                     <RadioButton
+                   		android:id="@+id/fuEQ"
+                    	android:layout_width="wrap_content"
+                    	android:layout_height="wrap_content"
+                    	android:text="@string/floating" />
+	                <RadioButton
+	                    android:id="@+id/junEQ"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="@string/equalizing" />
+	                 <RadioButton
+	                    android:id="@+id/cesEQ"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="@string/test" />
+                </RadioGroup>
+                
+                
+                 <Button
+                    android:id="@+id/fuorjunbutton"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+	                android:layout_weight="0.2"
+                    android:background="@layout/button_press"
+                    android:text="@string/ac_set"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesmid_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/rdf_kgjzt"
+	                android:layout_weight="0.8"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                  <RadioGroup
+                      android:id="@+id/openorcloseselect"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+	                  android:layout_weight="1"
+                      android:orientation="horizontal" >
+
+                     <RadioButton
+                    	android:id="@+id/openEQ"
+                    	android:layout_width="wrap_content"
+                    	android:layout_height="wrap_content"
+                    	android:text="@string/powerOn" />
+
+                      <RadioButton
+                    	android:id="@+id/closeEQ"
+                    	android:layout_width="wrap_content"
+                    	android:layout_height="wrap_content"
+                    	android:text="@string/powerOff" />
+                      
+                </RadioGroup>
+                
+
+                <Button
+                    android:id="@+id/openorclosebutton"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/ac_set"
+                    android:layout_weight="0.3"
+                    android:layout_gravity="right"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+        
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesmid_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp">
+
+                <Button
+                    android:id="@+id/btn_az"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+	                android:layout_weight="0.8"
+                    android:text="@string/rec_mk1az"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                  <RadioGroup
+                      android:id="@+id/anzhuang_or_no"
+                      android:layout_width="0dp"
+		              android:layout_weight="1"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal" >
+
+                     <RadioButton
+                    	android:id="@+id/anzhuangEQ"
+                    	android:layout_width="wrap_content"
+                    	android:layout_height="wrap_content"
+                    	android:text="@string/rec_yes" />
+
+                      <RadioButton
+                    	android:id="@+id/noEQ"
+                    	android:layout_width="wrap_content"
+                    	android:layout_height="wrap_content"
+                    	android:text="@string/rec_no" />
+                </RadioGroup>
+                
+
+                <Button
+                    android:id="@+id/installornobutton"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:background="@layout/button_press"
+	                android:layout_weight="0.3"
+                    android:text="@string/ac_set"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+			<TextView 
+			    android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/rec_memo"
+                android:textColor="@color/red"
+                android:textSize="16dp" />            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesmid_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp" >
+
+                <Button
+                    android:id="@+id/btn_kg"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:text="@string/rec_mk1kg"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                  <RadioGroup
+                      android:id="@+id/kaiguan_or_no"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+		              android:layout_weight="1"
+                      android:orientation="horizontal" >
+
+                     <RadioButton
+                    	android:id="@+id/kaiEQ"
+                    	android:layout_width="wrap_content"
+                    	android:layout_height="wrap_content"
+                    	android:text="@string/rec_open" />
+
+                      <RadioButton
+                    	android:id="@+id/guanEQ"
+                    	android:layout_width="wrap_content"
+                    	android:layout_height="wrap_content"
+                    	android:text="@string/rec_close" />
+                </RadioGroup>
+                
+
+                <Button
+                    android:id="@+id/kaiguanbutton"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:background="@layout/button_press"
+	                android:layout_weight="0.3"
+                    android:text="@string/ac_set"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+            <TextView 
+			    android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/rec_memo"
+                android:textColor="@color/red"
+                android:textSize="16dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:text="@string/bom"
+                    android:textColor="@color/text_clo"
+                    android:layout_weight="1"
+                    android:textSize="16dp" />                
+
+                <Button
+                    android:id="@+id/backupsetbtn"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:background="@layout/button_press"
+	                android:layout_weight="0.2"
+                    android:text="@string/ac_set"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout style="@style/wrap_layout" 
+            android:id="@+id/rdf_layout">
+		<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:text="@string/rdf_discharge"
+                    android:textColor="@color/text_clo"
+                    android:layout_weight="1"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/rdf_dischargeEdit"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_bg"
+                    android:inputType="number"/>
+
+                <Button
+                    android:id="@+id/setdischarge"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="10dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/ac_set"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+			<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:text="@string/rdf_dissave"
+                    android:textColor="@color/text_clo"
+                    android:layout_weight="1"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/rdf_dissaveEdit"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_bg"
+                    android:inputType="numberDecimal"/>
+
+                <Button
+                    android:id="@+id/setdissave"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="10dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/ac_set"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>   
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:text="@string/rdf_testtime"
+                    android:textColor="@color/text_clo"
+                    android:layout_weight="1"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/rdf_testtimeEdit"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_bg"
+                    android:inputType="number"/>
+
+                <Button
+                    android:id="@+id/setTestBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="10dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/ac_set"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout> 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:text="@string/back_consist"
+                    android:textColor="@color/text_clo"
+                    android:layout_weight="1"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/backconsisEdit"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_bg"
+                    android:inputType="number"/>
+
+                <Button
+                    android:id="@+id/setconsisBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="10dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/ac_set"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:text="@string/back_save"
+                    android:textColor="@color/text_clo"
+                    android:layout_weight="1"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/backsaveEdit"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_bg"
+                    android:inputType="number"/>
+
+                <Button
+                    android:id="@+id/backsaveBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="10dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/ac_set"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>    
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesbottom_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingBottom="16dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+                <Button
+                    android:id="@+id/getTestBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.24"
+                    android:background="@layout/button_press"
+                    android:layout_marginLeft="2dp"
+                    android:text="@string/rdf_getvolumcheck"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+            
+          </LinearLayout>
+                  <LinearLayout style="@style/wrap_layout" 
+            android:id="@+id/rdf_layout">   
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesmid_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="43dp"
+                    android:text="@string/testcomplete"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/testCompleteText"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/edit_bg"
+                    android:editable="false"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>    
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesmid_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="43dp"
+                    android:text="@string/testcircle"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/testCircleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/edit_bg"
+                    android:editable="false"
+                    android:paddingLeft="10dp" />
+            </LinearLayout> 
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesbottom_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingBottom="16dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+                <Button
+                    android:id="@+id/testflag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.24"
+                    android:background="@layout/button_press"
+                    android:layout_marginLeft="2dp"
+                    android:text="@string/testflag"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+            
+          </LinearLayout>
+                          <LinearLayout style="@style/wrap_layout" 
+            android:id="@+id/rdf_layout">   
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesmid_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="43dp"
+                    android:text="@string/batterystatus"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/batterystatusEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/edit_bg"
+                    android:editable="false"
+                    android:paddingLeft="10dp" />
+            </LinearLayout> 
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesbottom_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingBottom="16dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+                <Button
+                    android:id="@+id/getbackStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.24"
+                    android:background="@layout/button_press"
+                    android:layout_marginLeft="2dp"
+                    android:text="@string/getbatterystatus"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+            
+          </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

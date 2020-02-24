@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+encoding//src/com/dgm/dlyapp/BluetoothLeService.java=UTF-8
+encoding//src/com/dgm/dlyapp/DevicesInfoActivity.java=UTF-8
+encoding//src/com/dgm/dlyapp/EquipDebugActivity.java=UTF-8
+encoding//src/com/dgm/fragment/SystemSettingFragment.java=UTF-8
+encoding//src/com/dgm/util/DataAssembleUtil.java=UTF-8
+encoding//src/com/dgm/view/MyGridLayout.java=UTF-8
+encoding//src/com/zbar/lib/decode/CaptureActivityHandler.java=UTF-8
+encoding//src/com/zbar/lib/decode/DecodeHandler.java=UTF-8
+encoding//src/com/zbar/lib/decode/DecodeThread.java=UTF-8
+encoding/<project>=UTF-8

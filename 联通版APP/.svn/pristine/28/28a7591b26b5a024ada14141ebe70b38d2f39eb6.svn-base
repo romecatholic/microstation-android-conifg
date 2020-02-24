@@ -1,0 +1,1350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F3F6"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+        
+        <LinearLayout style="@style/wrap_layout" >
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/msf_fsuInfo"
+                android:textColor="@color/red"
+                android:textSize="16dp" />
+            <!-- 上圆角 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/msf_zcjip1"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+                
+                <EditText
+                    android:id="@+id/zcjip1"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="15"
+                    android:inputType="number"
+            		android:digits="0123456789."
+                    android:paddingLeft="10dp" />
+				<Button
+                    android:id="@+id/btnzcjip1"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="10dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/ac_set"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesmid_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/portnum1"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/dkh1"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="5"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+				<Button
+                    android:id="@+id/btndkh1"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="10dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/ac_set"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/msf_zcjip2"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+                
+                <EditText
+                    android:id="@+id/zcjip2"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="15"
+                    android:inputType="number"
+            		android:digits="0123456789."
+                    android:paddingLeft="10dp" />
+				<Button
+                    android:id="@+id/btnzcjip2"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="10dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/ac_set"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesmid_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/portnum2"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/dkh2"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="5"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+				<Button
+                    android:id="@+id/btndkh2"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="10dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/ac_set"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesmid_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="VPNIP1:"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/vpn1"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="15"
+                    android:inputType="number"
+            		android:digits="0123456789."
+                    android:paddingLeft="10dp" />
+				<Button
+                    android:id="@+id/btnvpn1"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="10dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/ac_set"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+			<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                   android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/msf_user"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/vpnuser1"
+                     android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="40"
+                    android:singleLine="true"
+                    android:paddingLeft="10dp"  />
+				<Button
+                    android:id="@+id/btnvpnuser1"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="10dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/ac_set"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+			
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/msf_pwd"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/vpnpass1"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="40"
+                    android:singleLine="true"
+                    android:paddingLeft="10dp" />
+				<Button
+                    android:id="@+id/btnvpnpass1"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="10dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/ac_set"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesmid_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="VPNIP2:"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/vpn2"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="15"
+                    android:inputType="number"
+            		android:digits="0123456789."
+                    android:paddingLeft="10dp" />
+				<Button
+                    android:id="@+id/btnvpn2"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="10dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/ac_set"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+			<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/msf_user"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/vpnuser2"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_bg"
+					android:maxLength="40"
+                    android:singleLine="true"
+                    android:paddingLeft="10dp" />
+				<Button
+                    android:id="@+id/btnvpnuser2"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="10dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/ac_set"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+			
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/msf_pwd"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/vpnpass2"
+                     android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_bg"
+					android:maxLength="40"
+                    android:singleLine="true"
+                    android:paddingLeft="10dp" />
+				<Button
+                    android:id="@+id/btnvpnpass2"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="10dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/ac_set"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="FSUIP"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/fsuip"
+                     android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="15"
+                    android:inputType="number"
+            		android:digits="0123456789."
+                    android:paddingLeft="10dp" />
+				<Button
+                    android:id="@+id/btnfsuip"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="10dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/ac_set"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout> 
+			<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="FSUID"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/fsuid"
+                     android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="28"
+                    android:singleLine="true"
+                    android:paddingLeft="10dp" />
+				<Button
+                    android:id="@+id/btnfsuid"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="10dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/ac_set"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="DPCID"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/dpcid"
+                     android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="28"
+                    android:singleLine="true"
+                    android:paddingLeft="10dp" />
+				<Button
+                    android:id="@+id/btndpcid"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="10dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/ac_set"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/netmode"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <Spinner 
+    				android:layout_width="0dp"
+                    android:layout_height="30dp"
+    				android:id="@+id/wlms"
+					android:layout_weight="1"
+                    android:background="@drawable/edit_bg"
+                    />
+				<Button
+                    android:id="@+id/btnwlms"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="10dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/ac_set"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/apnname"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/apn"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="40"
+                    android:singleLine="true"
+                    android:paddingLeft="10dp"/>
+				<Button
+                    android:id="@+id/btnapn"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="10dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/ac_set"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/msf_user"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/apnyhm"
+                     android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="40"
+                    android:singleLine="true"
+                    android:paddingLeft="10dp" />
+				<Button
+                    android:id="@+id/btnapnyhm"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="10dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/ac_set"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/msf_pwd"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/apnmm"
+                     android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="40"
+                    android:singleLine="true"
+                    android:paddingLeft="10dp" />
+				<Button
+                    android:id="@+id/btnapnmm"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="10dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/ac_set"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/msf_protocol"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/xykip"
+                     android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="15"
+                    android:inputType="number"
+            		android:digits="0123456789."
+                    android:paddingLeft="10dp" />
+				<Button
+                    android:id="@+id/btnxykip"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="10dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/ac_set"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/msf_protocolport"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/xykdk"
+                     android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="5"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+				<Button
+                    android:id="@+id/btnxykdk"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="10dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/ac_set"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/msf_zcjip3"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/zcjip3"
+                     android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="15"
+                    android:inputType="number"
+            		android:digits="0123456789."
+                    android:paddingLeft="10dp" />
+				<Button
+                    android:id="@+id/btnzcjip3"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="10dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/ac_set"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/portnum3"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/dkh3"
+                     android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="5"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+				<Button
+                    android:id="@+id/btndkh3"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="10dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/ac_set"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="VPNIP3:"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/vpn3"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="15"
+                    android:inputType="number"
+            		android:digits="0123456789."
+                    android:paddingLeft="10dp" />
+				<Button
+                    android:id="@+id/btnvpn3"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="10dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/ac_set"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/msf_user"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/vpnuser3"
+                     android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="40"
+                    android:singleLine="true"
+                    android:paddingLeft="10dp" />
+				<Button
+                    android:id="@+id/btnvpnuser3"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="10dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/ac_set"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/msf_pwd"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/vpnpass3"
+                     android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="40"
+                    android:singleLine="true"
+                    android:paddingLeft="10dp" />
+				<Button
+                    android:id="@+id/btnvpnpass3"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="10dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/ac_set"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="FSUVPNIP:"
+                    android:textColor="@color/text_clo"
+                    android:textSize="13dp" />
+
+                <EditText
+                    android:id="@+id/fsuvpnip"
+                     android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="15"
+                    android:inputType="number"
+            		android:digits="0123456789."
+                    android:paddingLeft="10dp" />
+                
+				<Button
+                    android:id="@+id/btnfsuvpnip"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="10dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/ac_set"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/publ"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/gwip"
+                     android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="15"
+                    android:inputType="number"
+            		android:digits="0123456789."
+                    android:paddingLeft="10dp" />
+				<Button
+                    android:id="@+id/btngwip"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="10dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/ac_set"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/netserial"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/swmkxh"
+                     android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="60"
+                    android:singleLine="true"
+                    android:paddingLeft="10dp" />
+				<Button
+                    android:id="@+id/btnswmkxh"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="10dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/ac_set"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="MAC:"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/mac"
+                     android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="17"
+                    android:inputType="textCapWords"
+                    android:digits="0123456789abcdefABCDEF:"
+                    android:paddingLeft="10dp" 
+                    android:textSize="14dp"/>
+				<Button
+                    android:id="@+id/btnmac"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="10dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/ac_set"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/simserial"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/sjch"
+                     android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="40"
+                    android:singleLine="true"
+                    android:paddingLeft="10dp" />
+				<Button
+                    android:id="@+id/btnsjch"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="10dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/ac_set"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/com"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <Spinner 
+    				android:layout_width="0dp"
+                    android:layout_height="30dp"
+    				android:id="@+id/simkyys"
+					android:layout_weight="1"
+                    android:background="@drawable/edit_bg"
+                    />
+				<Button
+                    android:id="@+id/btnsimkyys"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="10dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/ac_set"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/strong"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/simkxhqd"
+                     android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="4"
+                    android:inputType="number"
+                    android:hint="-128~127"
+                    android:digits="0123456789-"
+                    android:paddingLeft="10dp" />
+				<Button
+                    android:id="@+id/btnsimkxhqd"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="10dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/ac_set"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/netstyle"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <Spinner 
+    				android:layout_width="0dp"
+                    android:layout_height="30dp"
+    				android:id="@+id/wlzs"
+					android:layout_weight="1"
+                    android:background="@drawable/edit_bg"
+                    />
+                <Button
+                    android:id="@+id/btnwlzs"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="10dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/ac_set"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/ssstate"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <Spinner 
+    				android:layout_width="0dp"
+                    android:layout_height="30dp"
+    				android:id="@+id/ptjrzt"
+					android:layout_weight="1"
+                    android:background="@drawable/edit_bg"
+                    />
+				<Button
+                    android:id="@+id/btnptjrzt"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="10dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/ac_set"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/fourg"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+				
+				<Spinner 
+    				android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/sgbljzt"
+					android:layout_weight="1"
+                    android:background="@drawable/edit_bg"
+                    />
+				<Button
+                    android:id="@+id/btnsgbljzt"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="10dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/ac_set"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesbottom_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingBottom="16dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+                <Button
+                    android:id="@+id/fivegsys"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/ac_getAO"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

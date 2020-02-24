@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+	<LinearLayout
+	    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/devices_layout_selector"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="8dp" >
+        
+        <TextView
+            android:id="@+id/lics_text1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Exception"
+            android:layout_marginLeft="4dp"
+            android:textColor="@color/text_clo"
+            android:layout_weight="1"
+            android:textSize="16dp" />
+         <EditText
+			android:id="@+id/dsf_sndValEdit"
+			android:layout_width="0dp"
+            android:layout_height="30dp"
+			android:layout_weight="1"
+            android:background="@drawable/edit_bg"
+            android:editable="true"
+            android:paddingLeft="10dp" >
+         </EditText>
+
+            <Button
+                android:id="@+id/dsf_secondSet"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:background="@layout/button_press"
+                android:text="@string/ac_set"
+                android:layout_marginLeft="12dp"
+                android:textColor="@color/white"
+                android:layout_weight="0.5"
+                android:textSize="16dp" />
+
+        </LinearLayout>    
+
+</LinearLayout>

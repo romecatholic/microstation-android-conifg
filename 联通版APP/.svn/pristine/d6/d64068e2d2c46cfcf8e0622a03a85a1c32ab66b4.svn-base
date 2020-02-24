@@ -1,0 +1,282 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F3F6"
+    android:orientation="vertical" >
+    
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+		
+		<LinearLayout style="@style/wrap_layout" >
+         
+         <!-- 上圆角 -->
+         <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp">
+
+                <TextView 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/firstgroup"/>
+           
+           </LinearLayout>
+         <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+         		
+         		<TextView
+                    android:layout_width="130dp"
+                    android:layout_height="43dp"
+                    android:text="@string/rdf_txgz"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/txtbetcutOff1"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/edit_bg"
+                    android:editable="false"
+                    android:paddingLeft="10dp" />
+         
+         </LinearLayout>
+         <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesmid_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                 <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="43dp"
+                    android:text="@string/fb_batkttmpstate"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/txtbetkttmpzt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/edit_bg"
+                    android:editable="false"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+         <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp">
+         		
+         		<TextView
+         		    android:layout_width="0dp"
+         		    android:layout_height="wrap_content"
+         		    android:text="@string/fb_bhzt"
+         		    android:layout_weight="0.5"
+         		    android:textColor="@color/text_clo"
+         		    android:textSize="16dp" />
+
+         		<ListView
+          			android:id="@+id/bhzt1ListView"
+          			android:layout_width="0dp"
+          			android:layout_height="43dp"
+          			android:scrollbars="vertical"
+          			android:layout_weight="1"/>
+         	</LinearLayout>
+         <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp">
+         		
+         		<TextView
+         		    android:layout_width="0dp"
+         		    android:layout_height="wrap_content"
+         		    android:text="@string/fb_gjzt"
+         		    android:textColor="@color/text_clo"
+         		    android:layout_weight="0.5"
+         		    android:textSize="16dp" />
+
+         		<ListView
+          			android:id="@+id/gjzt1ListView"
+          			android:layout_width="0dp"
+          			android:layout_height="43dp"
+          			android:layout_weight="1"
+          			android:scrollbars="vertical"/>
+         	</LinearLayout>
+         </LinearLayout>
+         
+		 <LinearLayout style="@style/wrap_layout" >
+         
+         <!-- 上圆角 -->
+         <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp">
+
+                <TextView 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/secondgroup"/>
+           
+           </LinearLayout>
+           <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+         		
+         		<TextView
+                    android:layout_width="130dp"
+                    android:layout_height="43dp"
+                    android:text="@string/rdf_txgz"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/txtbetcutOff2"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/edit_bg"
+                    android:editable="false"
+                    android:paddingLeft="10dp" />
+         
+         </LinearLayout>
+           <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesmid_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                 <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="43dp"
+                    android:text="@string/fb_batkttmpstate"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/txtbetkttmpzt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/edit_bg"
+                    android:editable="false"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+           <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp">
+         		
+         		<TextView
+         		    android:layout_width="0dp"
+         		    android:layout_height="wrap_content"
+         		    android:text="@string/fb_bhzt"
+         		    android:textColor="@color/text_clo"
+         		    android:layout_weight="0.5"
+         		    android:textSize="16dp" />
+
+         		<ListView
+          			android:id="@+id/bhzt2ListView"
+          			android:layout_width="0dp"
+          			android:layout_height="43dp"
+          			android:layout_weight="1"
+          			android:scrollbars="vertical"/>
+         	</LinearLayout>
+         <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp">
+         		
+         		<TextView
+         		    android:layout_width="0dp"
+         		    android:layout_height="wrap_content"
+         		    android:text="@string/fb_gjzt"
+         		    android:textColor="@color/text_clo"
+         		    android:layout_weight="0.5"
+         		    android:textSize="16dp" />
+
+         		<ListView
+          			android:id="@+id/gjzt2ListView"
+          			android:layout_width="0dp"
+          			android:layout_height="43dp"
+          			android:layout_weight="1"
+          			android:scrollbars="vertical"/>
+         	</LinearLayout>         
+          <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesbottom_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingBottom="16dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <Button
+                    android:id="@+id/btnbetalarm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.33"
+                    android:background="@layout/button_press"
+                    android:text="@string/fb_getAlarm"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+         </LinearLayout>        
+     </LinearLayout>
+
+</ScrollView>

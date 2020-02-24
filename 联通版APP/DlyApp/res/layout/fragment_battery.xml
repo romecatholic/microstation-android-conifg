@@ -1,0 +1,479 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F3F6"
+    android:orientation="vertical" >
+    
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+        
+         <LinearLayout style="@style/wrap_layout" >
+         
+         <!-- 上圆角 -->
+         <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp">
+
+                <TextView 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/firstgroup"/>
+           
+           </LinearLayout>
+ 
+           <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp">
+         		
+         		<TextView
+         		    android:layout_width="130dp"
+         		    android:layout_height="wrap_content"
+         		    android:text="@string/fb_batvol"
+         		    android:textColor="@color/text_clo"
+         		    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/txtbetvol1"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/edit_bg"
+                    android:editable="false"
+                    android:paddingLeft="10dp" />
+         
+         </LinearLayout>
+
+           <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp">
+         		
+         		<TextView
+         		    android:layout_width="130dp"
+         		    android:layout_height="wrap_content"
+         		    android:text="@string/fb_batcur"
+         		    android:textColor="@color/text_clo"
+         		    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/txtbetcur1"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/edit_bg"
+                    android:editable="false"
+                    android:paddingLeft="10dp" />
+         
+         </LinearLayout>
+
+         <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp">
+         		
+         		<TextView
+         		    android:layout_width="130dp"
+         		    android:layout_height="43dp"
+         		    android:text="@string/fb_residualcap"
+         		    android:textColor="@color/text_clo"
+         		    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/txtbetcap1"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/edit_bg"
+                    android:editable="false"
+                    android:paddingLeft="10dp" />
+         
+         </LinearLayout>
+         
+         <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp">
+         		
+         		<TextView
+         		    android:layout_width="130dp"
+         		    android:layout_height="wrap_content"
+         		    android:text="@string/fb_recuring"
+         		    android:textColor="@color/text_clo"
+         		    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/txtbetxuhuan1"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/edit_bg"
+                    android:editable="false"
+                    android:paddingLeft="10dp" />
+         
+         </LinearLayout>         
+         
+           <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp">
+         		
+         		<TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fb_battmp"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/txtbettmp1"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/edit_bg"
+                    android:editable="false"
+                    android:paddingLeft="10dp" />
+         
+         </LinearLayout> 
+         <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp">
+         		
+         		<TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fb_batkttmp"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/txtbetkttmp1"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/edit_bg"
+                    android:editable="false"
+                    android:paddingLeft="10dp" />
+         
+         </LinearLayout>        
+         </LinearLayout>
+         
+		 <LinearLayout style="@style/wrap_layout" >
+         
+         <!-- 上圆角 -->
+         <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp">
+
+                <TextView 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/secondgroup"/>
+           
+           </LinearLayout>
+ 
+           <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp">
+         		
+         		<TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fb_batvol"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/txtbetvol2"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/edit_bg"
+                    android:editable="false"
+                    android:paddingLeft="10dp" />
+         
+         </LinearLayout>
+
+           
+           <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp">
+         		
+         		<TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fb_batcur"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/txtbetcur2"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/edit_bg"
+                    android:editable="false"
+                    android:paddingLeft="10dp" />
+         
+         </LinearLayout>
+		<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp">
+         		
+         		<TextView
+                    android:layout_width="130dp"
+                    android:layout_height="43dp"
+                    android:text="@string/fb_residualcap"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/txtbetcap2"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/edit_bg"
+                    android:editable="false"
+                    android:paddingLeft="10dp" />
+         
+         </LinearLayout>
+         <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp">
+         		
+         		<TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fb_recuring"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/txtbetxunhuan2"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/edit_bg"
+                    android:editable="false"
+                    android:paddingLeft="10dp" />
+         
+         </LinearLayout>         
+         
+           <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp">
+         		
+         		<TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fb_battmp"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/txtbettmp2"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/edit_bg"
+                    android:editable="false"
+                    android:paddingLeft="10dp" />
+         
+         </LinearLayout>
+                  <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp">
+         		
+         		<TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fb_batkttmp"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/txtbetkttmp2"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/edit_bg"
+                    android:editable="false"
+                    android:paddingLeft="10dp" />
+         
+         </LinearLayout>                 
+          <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesbottom_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingBottom="16dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <Button
+                    android:id="@+id/btnbetinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.33"
+                    android:background="@layout/button_press"
+                    android:text="@string/fb_getbatInfo"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+            
+	<LinearLayout style="@style/wrap_layout" android:id="@+id/ucf">
+
+            <!-- 上圆角 -->
+
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/devices_single_layout_selector"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="16dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/bt_icon"
+                android:textColor="@color/text_clo"
+                android:layout_weight="0.75"
+                android:layout_marginLeft="4dp"
+                android:textSize="16dp" />
+
+             <Spinner 
+    				android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+    				android:id="@+id/icon_sel"
+					android:layout_weight="1.25"
+                    android:background="@drawable/edit_bg"
+                    />
+            
+            <Button
+                    android:id="@+id/getIcon"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/ucf_get"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            
+            <Button
+                    android:id="@+id/setIcon"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+					android:layout_marginLeft="3dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/ac_set"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+       </LinearLayout>
+     
+      </LinearLayout>
+          
+         </LinearLayout>
+         
+     </LinearLayout>
+
+</ScrollView>

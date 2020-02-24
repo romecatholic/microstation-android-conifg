@@ -1,0 +1,6 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+  <item 
+      android:id="@+id/menu_aiInfo" 
+      android:title="模拟量信息" ></item> 
+  <item android:id="@+id/menu_alarmInfo" android:title="告警信息"></item> 
+</menu>

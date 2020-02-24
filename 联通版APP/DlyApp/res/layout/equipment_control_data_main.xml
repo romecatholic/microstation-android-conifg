@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical" 
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/listnull"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/noconnect"
+        android:textColor="#888888"
+        android:textSize="30dp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/equipment_control_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/clirefresh"
+        android:textColor="@color/white"
+        android:visibility="invisible" />
+</LinearLayout>
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/equipment_control_data_pull_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        app:ptrAnimationStyle="flip"
+        app:ptrHeaderBackground="@android:color/transparent"
+        app:ptrHeaderTextColor="#919191" />
+
+</RelativeLayout>

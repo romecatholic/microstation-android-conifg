@@ -1,0 +1,1366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F3F6"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout style="@style/wrap_layout" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/msf_sytemInfo"
+                android:textColor="@color/red"
+                android:textSize="16dp" />
+            
+            <!-- 上圆角 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="FSUID:"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/MicroStationFsuID"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="0.8"
+                    android:maxLength="14"
+                    android:background="@drawable/edit_bg"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesmid_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/msf_kgdyid"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/MicroStationSwitchID"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="0.8"
+                    android:maxLength="14"
+                    android:background="@drawable/edit_bg"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesmid_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/msf_ttid"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/MicroStationTowerID"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="0.8"
+                    android:maxLength="14"
+                    android:background="@drawable/edit_bg"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+			<LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesbottom_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+	            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/nb_switch"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                  <RadioGroup
+                      android:id="@+id/rgnb"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+		              android:layout_weight="1"
+                      android:orientation="horizontal" >
+
+                     <RadioButton
+                    	android:id="@+id/rgnbkai"
+                    	android:layout_width="wrap_content"
+                    	android:layout_height="wrap_content"
+                    	android:text="@string/rec_open" />
+
+                      <RadioButton
+                    	android:id="@+id/rgnbguan"
+                    	android:layout_width="wrap_content"
+                    	android:layout_height="wrap_content"
+                    	android:text="@string/rec_close" />
+                </RadioGroup>
+        	</LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesmid_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/msf_xzsz"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/MicroStationSys"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/edit_bg"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesbottom_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingBottom="16dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:id="@+id/MicroStationCmdA"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/MicroStationSysGet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/ac_getAO"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+                <Button
+                    android:id="@+id/MicroStationSysSet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/setParam"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/wrap_layout" >
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/msf_lscInfo"
+                android:textColor="@color/red"
+                android:textSize="16dp" />
+            <!-- 上圆角 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/msf_zcjip"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/MicroStationIP1"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:text="."
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/text_clo"
+                    android:textSize="32dp" />
+
+                <EditText
+                    android:id="@+id/MicroStationIP2"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:text="."
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/text_clo"
+                    android:textSize="32dp" />
+                <EditText
+                    android:id="@+id/MicroStationIP3"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:text="."
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/text_clo"
+                    android:textSize="32dp" />
+                <EditText
+                    android:id="@+id/MicroStationIP4"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesmid_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/portnum"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/MicroStationPort"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="5"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesmid_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/msf_xzsz"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/MicroStationCfg"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/edit_bg"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesbottom_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingBottom="16dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:id="@+id/MicroStationCmdB"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/MicroStationCfgGet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/ac_getAO"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+                <Button
+                    android:id="@+id/MicroStationCfgSet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/setParam"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+        
+        <LinearLayout style="@style/wrap_layout" >
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/msf_vpnInfo"
+                android:textColor="@color/red"
+                android:textSize="16dp" />
+            <!-- 上圆角 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="VPNIP1:"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/MicroStationVPNIPA1"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:text="."
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/text_clo"
+                    android:textSize="32dp" />
+                <EditText
+                    android:id="@+id/MicroStationVPNIPA2"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:text="."
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/text_clo"
+                    android:textSize="32dp" />
+                <EditText
+                    android:id="@+id/MicroStationVPNIPA3"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:text="."
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/text_clo"
+                    android:textSize="32dp" />
+                <EditText
+                    android:id="@+id/MicroStationVPNIPA4"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/msf_user"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/MicroStationVPN1user"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="16"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+
+
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/msf_pwd"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/MicroStationVPN1pass"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="16"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="VPNIP2:"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/MicroStationVPNIPB1"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:text="."
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/text_clo"
+                    android:textSize="32dp" />
+                <EditText
+                    android:id="@+id/MicroStationVPNIPB2"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:text="."
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/text_clo"
+                    android:textSize="32dp" />
+                <EditText
+                    android:id="@+id/MicroStationVPNIPB3"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:text="."
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/text_clo"
+                    android:textSize="32dp" />
+                <EditText
+                    android:id="@+id/MicroStationVPNIPB4"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+			<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/msf_user"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/MicroStationVPN2user"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="16"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/msf_pwd"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/MicroStationVPN2pass"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="16"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="VPNIP3:"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/MicroStationVPNIPC1"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:text="."
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/text_clo"
+                    android:textSize="32dp" />
+                <EditText
+                    android:id="@+id/MicroStationVPNIPC2"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:text="."
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/text_clo"
+                    android:textSize="32dp" />
+                
+                <EditText
+                    android:id="@+id/MicroStationVPNIPC3"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:text="."
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/text_clo"
+                    android:textSize="32dp" />
+                <EditText
+                    android:id="@+id/MicroStationVPNIPC4"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/msf_user"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/MicroStationVPN3user"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="16"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/msf_pwd"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/MicroStationVPN3pass"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="16"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+
+            </LinearLayout>            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="VPNIP4:"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/MicroStationVPNIPD1"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:text="."
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/text_clo"
+                    android:textSize="32dp" />
+                <EditText
+                    android:id="@+id/MicroStationVPNIPD2"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:text="."
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/text_clo"
+                    android:textSize="32dp" />
+                <EditText
+                    android:id="@+id/MicroStationVPNIPD3"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:text="."
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/text_clo"
+                    android:textSize="32dp" />
+                <EditText
+                    android:id="@+id/MicroStationVPNIPD4"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/msf_user"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/MicroStationVPN4user"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="16"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/msf_pwd"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/MicroStationVPN4pass"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="16"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesmid_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/msf_xzsz"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/MicroStationVPN"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/edit_bg"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesbottom_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingBottom="16dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:id="@+id/MicroStationCmdC"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/MicroStationVPNIPGet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/ac_getAO"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+                <Button
+                    android:id="@+id/MicroStationVPNIPSet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/setParam"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/wrap_layout" >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/msf_updateInfo"
+                android:textColor="@color/red"
+                android:textSize="16dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/msf_sjip1"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/MicroStationUpdateIPA1"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:text="."
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/text_clo"
+                    android:textSize="32dp" />
+                <EditText
+                    android:id="@+id/MicroStationUpdateIPA2"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:text="."
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/text_clo"
+                    android:textSize="32dp" />
+                <EditText
+                    android:id="@+id/MicroStationUpdateIPA3"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:text="."
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/text_clo"
+                    android:textSize="32dp" />
+                <EditText
+                    android:id="@+id/MicroStationUpdateIPA4"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesmid_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/msf_sjdk1"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/MicroStationUpdatePort1"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="5"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devices_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/msf_sjip2"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/MicroStationUpdateIPB1"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:text="."
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/text_clo"
+                    android:textSize="32dp" />
+                <EditText
+                    android:id="@+id/MicroStationUpdateIPB2"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:text="."
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/text_clo"
+                    android:textSize="32dp" />
+                <EditText
+                    android:id="@+id/MicroStationUpdateIPB3"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:text="."
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/text_clo"
+                    android:textSize="32dp" />
+                <EditText
+                    android:id="@+id/MicroStationUpdateIPB4"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesmid_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/msf_sjdk2"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/MicroStationUpdatePort2"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/edit_bg"
+                    android:maxLength="5"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesmid_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/msf_xzsz"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/MicroStationUpdate"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/edit_bg"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/devicesbottom_layout_selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingBottom="16dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:id="@+id/MicroStationCmdD"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:textColor="@color/text_clo"
+                    android:textSize="16dp"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/MicroStationUpdateGet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/ac_getAO"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+                <Button
+                    android:id="@+id/MicroStationUpdateSet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@layout/button_press"
+                    android:text="@string/setParam"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/wrap_layout" >
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

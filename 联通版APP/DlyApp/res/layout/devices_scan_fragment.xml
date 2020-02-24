@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+	<HorizontalScrollView
+	    android:id="@+id/devices_scroll"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" 
+	    android:layout_alignParentBottom="true"
+	    >
+
+    <LinearLayout
+        android:id="@+id/devices_menu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        
+        android:background="@drawable/bottombar"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/universal_command"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="@string/universal" />
+        
+        <View
+			android:layout_width="1dp"
+			android:layout_height="match_parent"
+			android:layout_gravity="center_horizontal"
+			android:background="#66CCFF" />
+
+        <TextView
+            android:id="@+id/ac_distribution"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="@string/acdistribution" />
+
+         <View
+			android:layout_width="1dp"
+			android:layout_height="match_parent"
+			android:layout_gravity="center_horizontal"
+			android:background="#66CCFF" />
+     
+        <TextView
+            android:id="@+id/rectifier_distribution"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="@string/rectifier" />
+        <View
+			android:layout_width="1dp"
+			android:layout_height="match_parent"
+			android:layout_gravity="center_horizontal"
+			android:background="#66CCFF" />
+         <TextView
+            android:id="@+id/dc_distribution"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="@string/dcdistribution" />
+        
+        <View
+			android:layout_width="1dp"
+			android:layout_height="match_parent"
+			android:layout_gravity="center_horizontal"
+			android:background="#66CCFF" />
+        <TextView
+            android:id="@+id/environment_protocol"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="@string/batteryinfo" 
+            />
+
+		<View
+		    android:layout_width="1dp"
+		    android:layout_height="match_parent"
+		    android:layout_gravity="center_horizontal"
+		    android:background="#66CCFF" />
+
+        <TextView
+            android:id="@+id/vdc_dc"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="@string/dcdc" 
+            />
+        
+        <View
+		    android:layout_width="1dp"
+		    android:layout_height="match_parent"
+		    android:layout_gravity="center_horizontal"
+		    android:background="#66CCFF" />
+
+        <TextView
+            android:id="@+id/photoTv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="@string/photo" 
+            />	
+
+        <View
+			android:layout_width="1dp"
+			android:layout_height="match_parent"
+			android:layout_gravity="center_horizontal"
+			android:background="#66CCFF" />
+                
+        <TextView
+            android:id="@+id/micro_cfg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="@string/micro" />
+        
+         <View
+			android:layout_width="1dp"
+			android:layout_height="match_parent"
+			android:layout_gravity="center_horizontal"
+			android:background="#66CCFF" />
+                
+        <TextView
+            android:id="@+id/digi_cfg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="@string/digitalfragment" />
+        
+    </LinearLayout>
+	</HorizontalScrollView>
+    <View
+        android:id="@+id/devices_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@id/devices_scroll"
+        android:background="@color/devide_line" />
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/devices_line" >
+    </FrameLayout>
+
+</RelativeLayout>
